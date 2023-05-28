@@ -40,6 +40,7 @@ mna <- normalized_data$cleaned_data.MNAa_total
 mnb <- normalized_data$cleaned_data.MNAb_total
 mmse <- normalized_data$cleaned_data.MMSE_class_binary
 
+#the code below is used for creating data frame from the variables of dataset
 my_data_frame <- data.frame(age, gender, height, weight, education, financial_s, gds, i_or_d, martial, mna, mnb, mmse)
 
 ggplot(normalized_data, aes(x = normalized_data$cleaned_data.Age , y = normalized_data$cleaned_data.Financial_status)) + geom_point()
